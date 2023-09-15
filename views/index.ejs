@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main/mystyle.css">
+
+</head>
+
+<body>
+
+   
+  <h1 class="heading"> <%= listTitle %> </h1>
+<div class="box">
+<div class="scroll">
+
+      <% work.forEach(function(task) { %>
+        <form action="/del" method="POST">
+        <div class="min">
+        <input type="checkbox" name="checkbox" value="<%= task._id %>" class="check" onChange="this.form.submit()">
+        <label class="task"><%= task.item %></label>
+        <input type="hidden" value="<%= listTitle %>" name="listName"></input>
+        </form>
+    </div>
+      <% }); %>
+    </div>
+
+
+<form action="/" method="POST">
+<input type="text" name="task" autocomplete="off" placeholder="Enter Task">
+    <button type="submit" name="list" value="<%=listTitle %>"> + </button>
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+input:checked + label{
+    text-decoration: line-through;
+}
+
+.min{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    font-size: 20px;
+
+}
+
+
+body{
+    background-color: rgb(247, 217, 226);
+}
+
+.scroll{
+    overflow: scroll;
+    height: 50vh;
+}
+
+label{
+    width: 170px;
+}
+
+
+input.check{
+    width: 26px;
+    height: 40px;
+    margin-right: 50px;
+}
+
+body{
+    color: #0b1354;
+    margin: 0;
+    padding: 0;
+
+}
+
+.heading{
+    font-size: 60px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    height: 70vh;
+}
+
+input[type="text"]{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #0b1354;
+    margin: 2rem;
+    height: 2rem;
+    width: 15rem;
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif ;
+    outline: none;
+    color:#0b1354 ;
+}
+
+button{
+    background-color:rgb(10, 144, 10);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+button:hover{
+    border: 3px solid rgba(173, 248, 166, 0.844);
+}
+
+.bb{
+    font-size: 20px;
+    margin: 30px 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border: none;
+}
+
